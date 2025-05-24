@@ -1,4 +1,4 @@
-
+import fetch from 'node-fetch';
 export default async (req, res) => {
   const { lat, lon, peakpower } = req.query;
   const url = `https://re.jrc.ec.europa.eu/api/PVcalc?lat=${lat}&lon=${lon}&peakpower=${peakpower}&loss=14&outputformat=json`;
